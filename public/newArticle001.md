@@ -1,14 +1,13 @@
 ---
 title: Ryosって？ なんじゃこりゃ... 衝撃の仮想デスクトップOS
 tags:
-  - "WebOS"
-  - "React"
-  - "Next.js"
-  - "Tailwind"
-
+  - React
+  - webOS
+  - Next.js
+  - tailwind
 private: false
-updated_at: ""
-id: null
+updated_at: '2025-07-13T20:45:15+09:00'
+id: 8088d9a39f475e516837
 organization_url_name: null
 slide: false
 ignorePublish: false
