@@ -1,0 +1,163 @@
+# Qiita Markdown記法 チートシート
+
+## コードブロック
+```markdown
+```ruby:filename.rb
+puts 'Hello World'
+```
+```
+
+## インラインコード
+```markdown
+`puts 'Qiita'` と書くことでインライン表示
+```
+
+## 見出し
+```markdown
+# H1見出し
+## H2見出し
+###### H6見出し
+```
+
+## 強調・太字
+```markdown
+*italic type* または _italic type_
+**太字** または __太字__
+```
+
+## 打ち消し線
+```markdown
+~~打ち消し~~
+```
+
+## 折りたたみ
+```markdown
+<details><summary>サンプルコード</summary>
+
+```rb
+puts 'Hello, World'
+```
+</details>
+```
+
+## 補足説明
+```markdown
+:::note info
+情報の補足説明
+:::
+
+:::note warn
+警告の補足説明
+:::
+
+:::note alert
+注意の補足説明
+:::
+```
+
+## 表
+```markdown
+| 列1 | 列2 | 列3 |
+|-----|-----|-----|
+| 値1 | 値2 | 値3 |
+```
+
+## リスト
+```markdown
+- 箇条書き1
+- 箇条書き2
+
+1. 番号付きリスト1
+2. 番号付きリスト2
+```
+
+## リンク
+```markdown
+[リンクテキスト](URL)
+```
+
+## 画像
+```markdown
+![alt text](画像URL)
+```
+
+## 引用
+```markdown
+> 引用文
+```
+
+## 水平線
+```markdown
+---
+```
+
+## 脚注
+```markdown
+脚注を付けたい文字列[^1]
+
+[^1]: 脚注の内容
+```
+
+## リンクカード
+```markdown
+(空行)
+https://qiita.com/Qiita/items/c686397e4a0f4f11683d
+(空行)
+```
+
+## ダイアグラム
+
+### PlantUML
+```markdown
+```plantuml
+Bob->Alice : Hello!
+```
+```
+
+### Mermaid
+```markdown
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+```
+
+## コマンド補完機能
+- `/codeblock` - コードブロックを挿入
+- `/alert` - 警告の補足説明を挿入
+- `/warn` - 注意の補足説明を挿入
+- `/info` - 補足説明を挿入
+- `/commentout` - コメントアウトを挿入
+- `/details` - 折りたたみを挿入
+- `/reference` - 脚注へのリンクを挿入
+- `/footnote` - 脚注への注釈内容を挿入
+- `/table` - 表を挿入
+
+## エスケープ
+```markdown
+\# H1
+エスケープされています
+```
+
+## 埋め込み可能なサービス
+- X（旧Twitter）
+- CodeSandbox
+- CodePen
+- GitHub Gist
+- Asciinema
+- Figma
+- Speaker Deck
+- SlideShare
+- Google Slide
+- Docswell
+- YouTube
+- Google Drive
+- StackBlitz
+
+## 制限事項
+- Mermaid: コードブロックあたり2000文字以内
+- Mermaid: Chain数は10以下
+- Interaction機能は無効化 
